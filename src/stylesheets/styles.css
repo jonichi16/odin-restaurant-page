@@ -12,11 +12,10 @@ body {
 .header {
   background-color: var(--bg-primary);
   padding: 1em 0;
-  line-height: 1;
 }
 
 .nav {
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -26,14 +25,9 @@ body {
 
 .logo {
   font-family: var(--font-logo);
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   flex: 1;
-}
-
-.navMenu {
-  display: flex;
-  gap: 2em;
 }
 
 li {
@@ -50,4 +44,80 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
+}
+
+.nav-toggle {
+  display: block;
+  margin: 0;
+  width: 1.5rem;
+  height: auto;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background-color: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 599px) {
+  .relative {
+    position: relative;
+  }
+
+  .nav-menu {
+    background-color: var(--bg-primary);
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+  }
+
+  .nav-menu li:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+
+  .nav-item:active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 2em;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
 }
