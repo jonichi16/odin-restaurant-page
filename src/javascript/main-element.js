@@ -6,6 +6,7 @@ const main = (() => {
   const getMain = () => mainEl;
 
   const appendPage = (page) => {
+    mainEl.textContent = '';
     mainEl.appendChild(page);
   };
 
