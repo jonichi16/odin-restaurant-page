@@ -3,6 +3,7 @@
   --font-logo: 'Lobster', cursive;
 
   --bg-primary: #030d0b;
+  --text-red: #991b1b;
 }
 
 html,
@@ -149,6 +150,49 @@ a:hover {
   max-width: 60ch;
 }
 
+/* Menu Page */
+
+.menu {
+  width: 90%;
+  max-width: 800px;
+  margin: 1.5em 0;
+  color: var(--bg-primary);
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.menu-item-card {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.details {
+  padding: 1em 1em;
+}
+
+.menu-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.menu-name {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+.menu-price {
+  text-align: end;
+  color: var(--text-red);
+}
+
 @media screen and (max-width: 599px) {
   .relative {
     position: relative;
@@ -204,5 +248,14 @@ a:hover {
 
   .description {
     font-size: 1.25rem;
+  }
+
+  .menu-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+
+  .menu-item-card {
+    border-radius: 10px;
   }
 }
