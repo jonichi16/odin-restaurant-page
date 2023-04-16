@@ -44,11 +44,11 @@ body {
 
 li {
   list-style: none;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
 }
 
@@ -96,6 +96,15 @@ a:hover {
 /* Main */
 .main {
   height: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-primary);
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  padding: 1em;
 }
 
 /* Home page */
@@ -190,5 +199,9 @@ a:hover {
 
   .description {
     font-size: 1.25rem;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 }
