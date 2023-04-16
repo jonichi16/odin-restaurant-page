@@ -6,17 +6,18 @@
 }
 
 html,
-body,
-.content {
+body {
   height: 100%;
   margin: 0;
 }
 
-body {
-  font-family: var(--font-primary);
-}
-
 .content {
+  min-height: 100%;
+  font-family: var(--font-primary);
+  background-image: url(../images/home-bg-mobile.jpg);
+  background-size: cover;
+  background-attachment: center;
+  background-position-x: right;
   display: flex;
   flex-direction: column;
 }
@@ -95,10 +96,10 @@ a:hover {
 
 /* Main */
 .main {
-  height: 100%;
-  background: url(../images/home-bg.jpg);
-  background-size: cover;
-  background-position: center;
+  flex: 1;
+  background-color: #030d0b67;
+  display: flex;
+  justify-content: center;
 }
 
 /* Footer */
@@ -117,19 +118,12 @@ a:hover {
 /* Home page */
 
 .home {
-  color: white;
-  height: 100%;
-  margin: 0;
-}
-
-.home .container {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #030d0b67;
   gap: 2em;
+  color: white;
 }
 
 .title,
@@ -148,7 +142,7 @@ a:hover {
 .description {
   text-align: center;
   font-size: 1rem;
-  max-width: 50ch;
+  max-width: 60ch;
 }
 
 @media screen and (max-width: 599px) {
@@ -175,15 +169,14 @@ a:hover {
     text-underline-offset: 3px;
     text-decoration-thickness: 3px;
   }
-
-  .main {
-    background: url(../images/home-bg-mobile.jpg);
-    background-position-y: -15em;
-    background-position-x: right;
-  }
 }
 
 @media screen and (min-width: 600px) {
+  .content {
+    background-image: url(../images/home-bg.jpg);
+    background-position: center;
+  }
+
   .logo {
     font-size: 2rem;
   }
@@ -197,15 +190,15 @@ a:hover {
     display: none;
   }
 
+  .home {
+    gap: 4em;
+  }
+
   .title {
     font-size: 3rem;
   }
 
   .description {
     font-size: 1.25rem;
-  }
-
-  .footer {
-    font-size: 1rem;
   }
 }
