@@ -17,7 +17,7 @@ body {
   font-family: var(--font-primary);
   background-image: url(../images/home-bg-mobile.jpg);
   background-size: cover;
-  background-attachment: center;
+  background-attachment: fixed;
   background-position-x: right;
   display: flex;
   flex-direction: column;
