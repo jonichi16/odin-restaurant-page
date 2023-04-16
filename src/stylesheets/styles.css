@@ -136,7 +136,11 @@ a:hover {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
+}
+
+.resto {
+  font-family: var(--font-logo);
 }
 
 .description {
