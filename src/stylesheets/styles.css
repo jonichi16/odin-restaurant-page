@@ -1,0 +1,53 @@
+:root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-logo: 'Lobster', cursive;
+
+  --bg-primary: #170a03;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.header {
+  background-color: var(--bg-primary);
+  padding: 1em 0;
+  line-height: 1;
+}
+
+.nav {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-size: 2rem;
+  color: white;
+  flex: 1;
+}
+
+.navMenu {
+  display: flex;
+  gap: 2em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+}
