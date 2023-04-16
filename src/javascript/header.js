@@ -1,9 +1,9 @@
 const header = (() => {
   const navMenu = [
-    { label: 'Home', url: '#' },
-    { label: 'Menu', url: '#' },
-    { label: 'About Us', url: '#' },
-    { label: 'Contacts', url: '#' },
+    { label: 'Home', id: 'home', url: '#' },
+    { label: 'Menu', id: 'menu', url: '#' },
+    { label: 'About Us', id: 'about', url: '#' },
+    { label: 'Contacts', id: 'contacts', url: '#' },
   ];
 
   const headerContainer = document.createElement('header');
@@ -30,7 +30,7 @@ const header = (() => {
 
     a.href = menu.url;
     a.textContent = menu.label;
-    a.id = menu.label.toLowerCase();
+    a.id = menu.id;
 
     li.appendChild(a);
     ul.appendChild(li);
