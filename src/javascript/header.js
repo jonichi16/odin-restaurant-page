@@ -59,9 +59,14 @@ const header = (() => {
     return navMenus;
   };
 
+  const closeMenu = () => {
+    ul.classList.add('hidden');
+  };
+
   return {
     getHeader,
     getNavMenus,
+    closeMenu,
   };
 })();
 

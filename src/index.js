@@ -32,6 +32,7 @@ header.getNavMenus().forEach((navMenu) => {
 
     if (page) {
       main.appendPage(pageLoader(navMenu.id));
+      header.closeMenu();
     }
   });
 });
