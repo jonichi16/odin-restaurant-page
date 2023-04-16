@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stylesheets/reset.css */ \"./src/stylesheets/reset.css\");\n\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stylesheets/reset.css */ \"./src/stylesheets/reset.css\");\n/* harmony import */ var _javascript_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./javascript/header */ \"./src/javascript/header.js\");\n\n\n\nconst content = document.querySelector('.content');\n\ncontent.appendChild(_javascript_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getHeader());\n\n_javascript_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getNavMenus().forEach((navMenu) => {\n  navMenu.addEventListener('click', (e) => {\n    e.preventDefault();\n  });\n});\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/javascript/header.js":
+/*!**********************************!*\
+  !*** ./src/javascript/header.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst header = (() => {\n  const navMenu = [\n    { label: 'Home', url: '#' },\n    { label: 'Menu', url: '#' },\n    { label: 'About Us', url: '#' },\n    { label: 'Contacts', url: '#' },\n  ];\n\n  const headerContainer = document.createElement('header');\n  const nav = document.createElement('nav');\n  const ul = document.createElement('ul');\n  const logo = document.createElement('div');\n\n  headerContainer.classList.add('header');\n  nav.classList.add('container');\n  logo.classList.add('logo');\n\n  logo.textContent = 'Atomic Eatery';\n\n  navMenu.forEach((menu) => {\n    const li = document.createElement('li');\n    const a = document.createElement('a');\n\n    a.classList.add('navMenu');\n\n    a.href = menu.url;\n    a.textContent = menu.label;\n    a.id = menu.label.toLowerCase();\n\n    li.appendChild(a);\n    ul.appendChild(li);\n  });\n\n  nav.appendChild(logo);\n  nav.appendChild(ul);\n  headerContainer.appendChild(nav);\n\n  const getHeader = () => headerContainer;\n\n  const getNavMenus = () => {\n    const navMenus = document.querySelectorAll('.navMenu');\n    return navMenus;\n  };\n\n  return {\n    getHeader,\n    getNavMenus,\n  };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/javascript/header.js?");
 
 /***/ })
 
