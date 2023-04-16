@@ -96,6 +96,9 @@ a:hover {
 /* Main */
 .main {
   height: 100%;
+  background: url(../images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Footer */
@@ -107,15 +110,16 @@ a:hover {
   padding: 1em;
 }
 
+.github-link {
+  text-decoration: underline;
+}
+
 /* Home page */
 
 .home {
   color: white;
   height: 100%;
   margin: 0;
-  background: url(../images/home-bg.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .home .container {
@@ -172,7 +176,7 @@ a:hover {
     text-decoration-thickness: 3px;
   }
 
-  .home {
+  .main {
     background: url(../images/home-bg-mobile.jpg);
     background-position-y: -15em;
     background-position-x: right;
