@@ -6,6 +6,7 @@ import footer from './javascript/footer';
 import home from './javascript/home';
 import menu from './javascript/menu';
 import about from './javascript/about';
+import contacts from './javascript/contacts';
 
 const content = document.querySelector('.content');
 const mainContainer = main.getMain();
@@ -23,6 +24,8 @@ const pageLoader = (page) => {
     pageLoad = menu.getPage();
   } else if (page === 'about') {
     pageLoad = about.getPage();
+  } else if (page === 'contacts') {
+    pageLoad = contacts.getPage();
   }
 
   return pageLoad;
