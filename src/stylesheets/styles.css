@@ -116,9 +116,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Home page */
+/* Home page & About page*/
 
-.home {
+.home,
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
