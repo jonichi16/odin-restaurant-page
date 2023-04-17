@@ -152,8 +152,8 @@ a:hover {
   max-width: 55ch;
 }
 
-.contacts .description {
-  width: 75ch;
+.contacts {
+  width: 100%;
 }
 
 /* Menu Page */
