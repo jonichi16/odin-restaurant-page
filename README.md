@@ -20,6 +20,8 @@ A project for [TheOdinProject](https://www.theodinproject.com/lessons/javascript
 
 - Javascript
 
+- Webpack
+
 ## Credits
 
 - Background Image - [Edward Eyer](https://www.pexels.com/photo/interior-design-of-an-empty-restaurant-2923034/)
