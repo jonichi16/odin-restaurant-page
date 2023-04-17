@@ -116,10 +116,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Home page & About page*/
+/* Home page & About page & Contacts page */
 
 .home,
-.about {
+.about,
+.contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,7 +132,6 @@ a:hover {
 .title,
 .description {
   width: 90%;
-  margin: 0 auto;
 }
 
 .title {
@@ -148,7 +148,12 @@ a:hover {
 .description {
   text-align: center;
   font-size: 1rem;
-  max-width: 60ch;
+  line-height: 2;
+  max-width: 55ch;
+}
+
+.contacts .description {
+  width: 75ch;
 }
 
 /* Menu Page */
