@@ -177,6 +177,10 @@ a:hover {
   border-radius: 5px;
 }
 
+.menu-img {
+  width: 100%;
+}
+
 .details {
   padding: 1em 1em;
 }
